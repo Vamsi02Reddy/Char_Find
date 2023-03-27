@@ -6,6 +6,7 @@ const Pagination = ({info,setPageNumber,pageNumber}) => {
     let[width,setWidth]=useState(window.innerWidth);
     let updateDimension=()=>{
       setWidth(window.innerWidth)
+      console.log("hi")
     }
     useEffect(()=>{
       window.addEventListener("resize",updateDimension);
